@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>表格</H1>
+    <form action="/action" method="post"></form>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>商品編號</th>
+                <th>名稱</th>
+                <th>規格</th>
+                <th>原價</th>
+                <th>特價</th>
+                <th>庫存</th>
+                <th>評價</th>
+            </tr>
+            <tr>
+                <th>P001</th>
+                <th>無線藍芽耳機</th>
+                <th>黑色/白色</th>
+                <th>$2500</th>
+                <th>$2990</th>
+                <th>25</th>
+                <th>★★★★☆</th>
+
+            <tr>
+                <th>P002</th>
+                <th>USB-C 充電線</th>
+                <th>1.5米</th>
+                <th>$499</th>
+                <th>$299</th>
+                <th>50</th>
+                <th>★★★★★</th>
+            </tr>
+
+            <tr>
+                <th>P003</th>
+                <th>行動電源</th>
+                <th>10000mAh</th>
+                <th>$1200</th>
+                <th>$899</th>
+                <th>12</th>
+                <th>★★★★☆</th>
+
+
+            <tr>
+                <th>P004</th>
+                <th>手機支架</th>
+                <th>可調式</th>
+                <th>$350</th>
+                <th>$199</th>
+                <th>30</th>
+                <th>★★★☆☆</th>
+            <tr>
+                <th colspan="5"><strong>總共四項商品</strong></th>
+                <th colspan="2"><strong>限時特惠</th>
+            </tr>
+
+
+
+        </thead>
+
+    </table>
+    <fieldset>
+        <legend>商品</legend>
+        <h2>商品選擇</h2>
+        <p>
+            <input type="checkbox" id="produst" name="p001" value="produst">
+            <label for="produst">無線藍芽耳機-$1990</label> <select name="A" id="A">
+                <option value="">請選擇顏色</option>
+                <option value="taipei">黑</option>
+                <option value="kaohsiung">白</option>
+                <label for="name">數量</label>
+                <input id="A" name="A" type="number" placeholder="請輸入數量">
+        </p>
+        <p>
+            <input type="checkbox" id="p001" name="p001" value="p001">
+            <label for="produst">USB-C充電線</label>
+            <label for="name">數量</label>
+            <input id="A" name="A" type="number" placeholder="請輸入數量">
+        </p>
+
+
+
+
+        <p><input type="checkbox" id="produst" name="interests" value="produst">
+            <label for="produst">行充</label>
+            <label for="name">數量</label>
+            <input id="A" name="A" type="number" placeholder="請輸入數量">
+        </p>
+
+        <p><input type="checkbox" id="produst" name="interests" value="produst">
+            <label for="produst">支架</label>
+            <label for="name">數量</label>
+            <input id="A" name="A" type="number" placeholder="請輸入數量">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>
+            收件人資訊
+        </legend>
+        <p>
+            <label for="music">收件人姓名</label>
+            <label for="name">姓名</label>
+            <input id="A" name="A" type="namer" placeholder="請輸入數量">
+        </p>
+
+        <p><label for="music">收件人電話</label>
+            <label for="name">電話</label>
+            <input id="A" name="A" type="phonenumber" placeholder="90XX-xxx-xxx">
+        </p>
+        <p><label for="music">電子郵件</label>
+            <label for="name">郵件</label>
+            <input id="A" name="A" type="email" placeholder="請輸入">
+        </p>
+        <p>
+            <label for="music">收件人地址</label>
+            <label for="name">地址</label>
+        <p> <textarea name="message" id="message" rows="5" cols="40" placeholder="請輸入"></textarea></p>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>
+            配送選項
+        </legend>
+        <p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">標準配送(3~5的工作天)-免費</label>
+
+        </p>
+
+        <p> <input type="radio" id="male" name="gender" value="male">
+            <label for="male">快速配送(1~2的工作天)-$100</label>
+        </p>
+        <p> <input type="radio" id="male" name="gender" value="male">
+            <label for="male">隔夜配送(次日到達)-$200</label>
+        </p>
+        <P>
+
+            <label for="date">希望配送時間</label>
+            <input id="date" type="date">
+        </P>
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            付款方式
+        </legend>
+        <p>
+            <input type="radio" id="pay" name="pay" value="ture">
+            <label for="pay">信用卡付款</label>
+
+        </p>
+
+        <p> <input type="radio" id="pay" name="pay" value="ture">
+            <label for="pay">ATM轉帳</label>
+        </p>
+        <p> <input type="radio" id="pay" name="pay" value="ture">
+            <label for="pay">貨到付款</label>
+        </p>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            其他資訊
+        </legend>
+        <p>
+
+            <label for="">優惠卷代碼</label>
+            <input id="A" name="A" type="" placeholder="請輸入">
+
+        </p>
+        <label for="備註">訂單備註</label>
+        <p> <textarea name="message" id="message" rows="5" cols="40" placeholder="請輸入"></textarea>
+        <p>
+            <input type="checkbox" id="" name="" value="">
+            <label for="">我希望收到最新商品資訊及優惠訊息</label>
+
+        </p>
+        <p> <input type="checkbox" id="" name="" value="">
+            <label for="">我已閱讀並同意購物條款與隱私政策</label>
+        </p>
+
+     
+
+    </fieldset>
+       <button type="submit">提交</button>
+        <button type="reset">重設表單</button>
+</form>
+
+
+
+
+
+
+</body>
+
+</html>
